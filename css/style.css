@@ -1,0 +1,533 @@
+
+ 
+/* Colores y valores principales de la página */
+:root {
+    --rosa-principal: #e8a9bd;
+    --rosa-claro: #f9eaf0;
+    --rosa-suave: #fff5f8;
+    --fondo: #fffdfd;
+    --blanco: #ffffff;
+    --texto: #30262d;
+    --texto-secundario: #796c75;
+    --borde: #f0dfe6;
+    --sombra: 0 8px 28px rgba(78, 43, 59, 0.07);
+}
+ 
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+ 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+ 
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+}
+ 
+/* Imágenes y elementos multimedia */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+audio,
+video {
+    max-width: 100%;
+}
+ 
+ 
+/*ENCABEZADO PRINCIPAL*/
+ 
+header {
+    padding: 65px 20px 55px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #fff5f8,
+        #f8e3eb,
+        #fffafa
+    );
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: -4px;
+    line-height: 1.2;
+    color: #503443;
+}
+ 
+header p {
+    margin: 15px 0 0;
+    color: var(--texto-secundario);
+    font-size: 1.05rem;
+    letter-spacing: 0.4px;
+}
+ 
+ 
+/*BARRA DE NAVEGACIÓN*/
+ 
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px 20px;
+    background-color: rgba(255, 253, 253, 0.96);
+    border-bottom: 1px solid var(--borde);
+    box-shadow: 0 3px 12px rgba(78, 43, 59, 0.04);
+}
+ 
+nav a {
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 25px;
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.25s, color 0.25s;
+}
+ 
+nav a:hover {
+    background-color: var(--rosa-claro);
+    color: #8b405e;
+}
+ 
+ 
+/*CONTENIDO PRINCIPAL*/
+ 
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 28px;
+}
+ 
+section {
+    margin-bottom: 35px;
+    padding: 32px;
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 22px;
+    box-shadow: var(--sombra);
+    scroll-margin-top: 105px;
+}
+ 
+section h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #543647;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.35;
+    letter-spacing: -0.5px;
+}
+ 
+section h3 {
+    color: #654454;
+    line-height: 1.4;
+}
+ 
+section p {
+    color: var(--texto-secundario);
+}
+ 
+section > p {
+    margin-top: 8px;
+}
+ 
+ 
+/*INICIO*/
+ 
+#Inicio {
+    padding: 55px 40px;
+    background: linear-gradient(
+        120deg,
+        #fff4f7,
+        #f7e3ec
+    );
+    border: none;
+}
+ 
+#Inicio h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    max-width: 700px;
+}
+ 
+#Inicio p {
+    max-width: 760px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+ 
+ 
+/*EXPLORAR, MODA Y BELLEZA*/
+ 
+#Explorar,
+#Moda,
+#Belleza {
+    background-color: #fffafb;
+}
+ 
+#Explorar {
+    border-top: 3px solid #e6afc2;
+}
+ 
+#Moda {
+    border-top: 3px solid #d8b6a3;
+}
+ 
+#Belleza {
+    border-top: 3px solid #d9b8d7;
+}
+ 
+ 
+/*PUBLICACIONES*/
+ 
+#Publicaciones {
+    background-color: #fffafb;
+}
+ 
+#Publicaciones article {
+    margin-top: 25px;
+    padding: 24px;
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+ 
+#Publicaciones article:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra);
+}
+ 
+#Publicaciones article h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+ 
+#Publicaciones article p {
+    margin: 10px 0;
+}
+ 
+/* Imágenes de las publicaciones */
+#Publicaciones article img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center;
+    margin: 18px 0;
+    border-radius: 14px;
+    background-color: var(--rosa-claro);
+}
+ 
+/* El contador de Me gusta */
+#Publicaciones article p:last-child {
+    color: #8b405e;
+    font-weight: 600;
+}
+ 
+ 
+/*FORMULARIO PARA CREAR PUBLICACIONES*/
+ 
+#Crear {
+    background-color: #fff8fa;
+}
+ 
+form {
+    margin-top: 25px;
+}
+ 
+label {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: var(--texto);
+    font-weight: 600;
+}
+ 
+input,
+textarea,
+select {
+    width: 100%;
+    max-width: 650px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--texto);
+    background-color: var(--blanco);
+    border: 1px solid #e6d4dd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+ 
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+ 
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--rosa-principal);
+    box-shadow: 0 0 0 3px rgba(232, 169, 189, 0.2);
+}
+ 
+ 
+/*BOTONES*/
+ 
+button {
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--blanco);
+    background-color: #75465b;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.25s;
+}
+ 
+button:hover {
+    background-color: #573245;
+    transform: translateY(-2px);
+}
+ 
+button:focus-visible,
+nav a:focus-visible {
+    outline: 3px solid var(--rosa-principal);
+    outline-offset: 3px;
+}
+ 
+ 
+/*VIDEOS*/
+ 
+#Videos {
+    background-color: #fffafb;
+}
+ 
+#Videos video {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 20px;
+    border-radius: 16px;
+    background-color: #f4e8ed;
+}
+ 
+ 
+/*MÚSICA*/
+ 
+#Musica {
+    background: linear-gradient(
+        135deg,
+        #fff7fa,
+        #f5e5ee
+    );
+}
+ 
+#Musica audio {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+ 
+#Musica h2 {
+    color: #573245;
+}
+ 
+ 
+/*COMUNIDAD*/
+ 
+#Comunidad {
+    background-color: #fffafb;
+}
+ 
+ 
+/*PRODUCTOS*/
+ 
+#Productos {
+    background-color: #fffafb;
+}
+ 
+#Productos img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 350px;
+    object-fit: contain;
+    margin: 18px 0;
+    padding: 10px;
+    background-color: #fff7fa;
+    border-radius: 15px;
+}
+ 
+ 
+/*COLECCIÓN PERSONAL*/
+ 
+#Coleccion {
+    background-color: #fff7fa;
+}
+ 
+#Coleccion ul {
+    padding-left: 22px;
+}
+ 
+#Coleccion li {
+    margin-bottom: 10px;
+    color: var(--texto-secundario);
+}
+ 
+ 
+/*PERFIL*/
+ 
+#Perfil {
+    background-color: #fffafb;
+}
+ 
+#Perfil p {
+    margin-bottom: 12px;
+}
+ 
+ 
+/*ACERCA DE*/
+ 
+#Acerca {
+    background-color: #fff7fa;
+}
+ 
+#Acerca p {
+    max-width: 850px;
+    line-height: 1.9;
+}
+ 
+ 
+/*PIE DE PÁGINA*/
+ 
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #382832;
+    color: #fff7fa;
+}
+ 
+footer p {
+    margin: 7px 0;
+}
+ 
+footer p:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+ 
+footer p:last-child {
+    color: #dfcbd5;
+    font-size: 0.9rem;
+}
+ 
+ 
+/*ADAPTACIÓN A CELULARES*/
+ 
+@media (max-width: 768px) {
+ 
+    header {
+        padding: 45px 18px;
+    }
+ 
+    header h1 {
+        letter-spacing: -2px;
+    }
+ 
+    nav {
+        gap: 5px;
+        padding: 12px 10px;
+    }
+ 
+    nav a {
+        padding: 7px 10px;
+        font-size: 0.82rem;
+    }
+ 
+    main {
+        padding: 22px 15px;
+    }
+ 
+    section {
+        padding: 24px 19px;
+        margin-bottom: 22px;
+        border-radius: 17px;
+    }
+ 
+    #Inicio {
+        padding: 35px 23px;
+    }
+ 
+    #Publicaciones article {
+        padding: 18px;
+    }
+ 
+    #Publicaciones article img {
+        max-width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+    }
+ 
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+ 
+    #Videos video {
+        max-width: 100%;
+    }
+}
+ 
+@media (max-width: 420px) {
+ 
+    header h1 {
+        font-size: 3rem;
+    }
+ 
+    nav {
+        justify-content: flex-start;
+    }
+ 
+    nav a {
+        font-size: 0.78rem;
+        padding: 6px 9px;
+    }
+ 
+    section {
+        padding: 20px 15px;
+    }
+ 
+    #Inicio {
+        padding: 30px 19px;
+    }
+ 
+    #Publicaciones article {
+        padding: 15px;
+    }
+ 
+    button {
+        max-width: 100%;
+    }
+}
+ 
