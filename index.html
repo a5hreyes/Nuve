@@ -1,180 +1,586 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--Configuración de la página-->
     <meta charset="UTF-8">
     <meta name="description" content="Tu espacio de inspiración">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Nuvé | Tu espacio de inspiración</title>
 </head>
 
 <body>
+
     <!--Encabezado principal-->
     <header>
         <h1>Nuvé</h1>
+
+        <!--Barra de búsqueda-->
+        <div class="busqueda">
+            <input type="search" placeholder="Busca lo que te inspira">
+        </div>
+
         <p>Inspírate, comparte y descubre tu estilo</p>
     </header>
 
+
     <!--Barra de navegación-->
     <nav>
+
+        <p class="nav-titulo">DESCUBRE</p>
+
         <a href="#Inicio">Inicio</a>
         <a href="#Explorar">Explorar</a>
         <a href="#Moda">Moda</a>
         <a href="#Belleza">Belleza</a>
+
+        <p class="nav-titulo">COMPARTE</p>
+
         <a href="#Publicaciones">Publicaciones</a>
-        <a href="#Crear">Crear Publicación</a>
+        <a href="#Crear">Crear publicación</a>
         <a href="#Videos">Videos</a>
         <a href="#Musica">Música</a>
         <a href="#Comunidad">Comunidad</a>
+
+        <p class="nav-titulo">TU ESPACIO</p>
+
         <a href="#Productos">Productos</a>
         <a href="#Coleccion">Colección</a>
         <a href="#Perfil">Perfil</a>
         <a href="#Acerca">Acerca de</a>
+
     </nav>
+
 
     <!--Contenido principal-->
     <main>
 
         <!--Sección de inicio-->
         <section id="Inicio">
-            <h2>Bienvenido a Nuvé</h2>
-            <p>Este es un espacio para encontrar inspiración, compartir ideas y descubrir nuevas tendencias de moda, belleza, peinados y música</p>
+
+            <div class="inicio-texto">
+
+                <span class="etiqueta-inicio">BELLEZA EN LO COTIDIANO</span>
+
+                <h2>Nuvé</h2>
+
+                <p class="frase-inicio">La inspiración empieza en ti.</p>
+
+                <p class="descripcion-inicio">
+                    Moda, belleza y pequeños detalles para descubrir tu propio
+                    estilo e inspirarte cada día.
+                </p>
+
+                <a href="#Explorar" class="boton-inicio">
+                    Comenzar a explorar
+                </a>
+
+            </div>
+
+            <!--Banner principal-->
+            <div class="inicio-banner">
+                <img src="img/banner.jpg" alt="Inspiración y estilo">
+                <span class="banner-frase">La belleza de lo cotidiano</span>
+            </div>
+
         </section>
+
 
         <!--Sección Explorar-->
         <section id="Explorar">
-            <h2>Explorar</h2>
-            <p>Descubre contenido variado y tendencias destacadas de la comunidad.</p>
+
+            <div class="encabezado-seccion">
+                <p>DESCUBRE NUEVAS IDEAS</p>
+                <h2>Explorar</h2>
+            </div>
+
+            <p>Encuentra contenido variado y tendencias para inspirarte.</p>
+
+            <div class="galeria">
+
+                <article class="tarjeta">
+                    <img src="img/explorar1.jpg" alt="Inspiración de moda">
+                    <h3>Ideas para tu estilo</h3>
+                    <p>Encuentra nuevas formas de expresar tu personalidad.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/explorar2.jpg" alt="Inspiración de belleza">
+                    <h3>Detalles que inspiran</h3>
+                    <p>Pequeñas ideas para acompañar tu día.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/explorar3.jpg" alt="Nuevas tendencias">
+                    <h3>Nuevas tendencias</h3>
+                    <p>Descubre lo que está inspirando a la comunidad.</p>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Moda-->
         <section id="Moda">
-            <h2>Moda y Outfits</h2>
-            <p>Inspiración para combinar prendas, accesorios y estilos únicos.</p>
+
+            <div class="encabezado-seccion">
+                <p>INSPIRACIÓN PARA VESTIR</p>
+                <h2>Moda y Outfits</h2>
+            </div>
+
+            <p>Ideas para combinar prendas, accesorios y estilos únicos.</p>
+
+            <div class="galeria">
+
+                <article class="tarjeta">
+                    <img src="img/moda1.jpg" alt="Outfit casual">
+                    <h3>Estilo casual</h3>
+                    <p>Combinaciones sencillas para todos los días.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/moda2.jpg" alt="Ideas para combinar">
+                    <h3>Ideas para combinar</h3>
+                    <p>Prendas básicas para crear diferentes estilos.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/moda3.jpg" alt="Accesorios">
+                    <h3>Pequeños detalles</h3>
+                    <p>Accesorios para complementar tu outfit.</p>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Belleza-->
         <section id="Belleza">
-            <h2>Belleza y Cuidado</h2>
+
+            <div class="encabezado-seccion">
+                <p>UN MOMENTO PARA TI</p>
+                <h2>Belleza y Cuidado</h2>
+            </div>
+
             <p>Rutinas de skincare, maquillaje y consejos de estilo personal.</p>
+
+            <div class="galeria">
+
+                <article class="tarjeta">
+                    <img src="img/belleza1.jpg" alt="Rutina de cuidado">
+                    <h3>Rutina de cuidado</h3>
+                    <p>Pequeños momentos para cuidar de ti.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/belleza2.jpg" alt="Ideas de maquillaje">
+                    <h3>Ideas de maquillaje</h3>
+                    <p>Inspírate y encuentra nuevos estilos.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/belleza3.jpg" alt="Cuidado personal">
+                    <h3>Tu momento</h3>
+                    <p>Ideas para sentirte bien y expresarte.</p>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección de publicaciones-->
         <section id="Publicaciones">
-            <h2>Publicaciones</h2>
+
+            <div class="encabezado-seccion">
+                <p>IDEAS DE LA COMUNIDAD</p>
+                <h2>Publicaciones</h2>
+            </div>
+
             <p>Descubre las ideas que comparte nuestra comunidad.</p>
 
-            <!--Primera publicación-->
-            <article>
-                <h3>Usuario: a5hh.10</h3>
-                <p>Hoy encontré nuevas ideas de oufits para combinar prendas básicas y crear diferentes estilos.</p>
-                <p>Categoria: Moda</p>
-                <img src="img/Oufit 1.jpg" alt="Oufit 1" style="width:100% ; max-width:400px ; border-radius:10px ; display: block; margin: 10px;"
-                <p>Me gusta: 12</p>
-            </article>
+            <div class="publicaciones-contenedor">
 
-            <!--Segunda publicación-->
-            <article>
-                <h3>Usuario: nxzth124</h3>
-                <p>Estos peinados sencillos son perfectos para cambiar de look sin complicarse tanto.</p>
-                <p>Categoria: Peinados</p>
-                 <img src="img/peinado 3.jpg" alt="Peinado 1" style="width:100%; max-width:400px ; border-radius:10px; display: block; margin:10px;"
-                <p>Me gusta: 120</p>
-            </article>
+                <!--Primera publicación-->
+                <article class="publicacion">
 
-            <!--Tercera publicación-->
-            <article>
-                <h3>Usuario: Dari_2008</h3>
-                <p>Les comparto algunas canciones que me gusta escuchar mientra me arreglo o estudio</p>
-                <p>Categoria: Música</p>
-                <img src="img/música.jpg" alt="Playlist" style="width:100%; max-width:400px ; border-radius:10px ; display: block; margin:10px; "
-                <p>Me gusta: 300</p>
-            </article>
+                    <h3>Usuario: a5hh.10</h3>
+
+                    <p>
+                        Hoy encontré nuevas ideas de outfits para combinar prendas
+                        básicas y crear diferentes estilos.
+                    </p>
+
+                    <p class="categoria">Categoría: Moda</p>
+
+                    <img src="img/Oufit 1.jpg" alt="Outfit 1">
+
+                    <div class="acciones-publicacion">
+                        <button type="button" class="boton-like">♡ Me gusta</button>
+                        <span>12 Me gusta</span>
+                    </div>
+
+                </article>
+
+
+                <!--Segunda publicación-->
+                <article class="publicacion">
+
+                    <h3>Usuario: nxzth124</h3>
+
+                    <p>
+                        Estos peinados sencillos son perfectos para cambiar
+                        de look sin complicarse tanto.
+                    </p>
+
+                    <p class="categoria">Categoría: Peinados</p>
+
+                    <img src="img/peinado 3.jpg" alt="Peinado 1">
+
+                    <div class="acciones-publicacion">
+                        <button type="button" class="boton-like">♡ Me gusta</button>
+                        <span>120 Me gusta</span>
+                    </div>
+
+                </article>
+
+
+                <!--Tercera publicación-->
+                <article class="publicacion">
+
+                    <h3>Usuario: Dari_2008</h3>
+
+                    <p>
+                        Les comparto algunas canciones que me gusta escuchar
+                        mientras me arreglo o estudio.
+                    </p>
+
+                    <p class="categoria">Categoría: Música</p>
+
+                    <img src="img/música.jpg" alt="Playlist">
+
+                    <div class="acciones-publicacion">
+                        <button type="button" class="boton-like">♡ Me gusta</button>
+                        <span>300 Me gusta</span>
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Crear publicación-->
         <section id="Crear">
-            <h2>Crear publicación</h2>
+
+            <div class="encabezado-seccion">
+                <p>COMPARTE CON NUVÉ</p>
+                <h2>Crear publicación</h2>
+            </div>
+
             <p>Comparte tus ideas con la comunidad de Nuvé.</p>
 
             <form>
-                <label for="Usuario">Nombre del usuario:</label><br>
-                <input type="text" id="Usuario" name="Usuario"><br><br>
 
-                <label for="Contenido">Contenido de la publicación:</label><br>
-                <textarea id="Contenido" name="Contenido" rows="4"></textarea><br><br>
+                <label for="Usuario">Nombre del usuario:</label>
+                <input type="text" id="Usuario" name="Usuario">
 
-                <label for="categoria">Categoría:</label><br>
+                <label for="Contenido">Contenido de la publicación:</label>
+                <textarea id="Contenido" name="Contenido" rows="4"></textarea>
+
+                <label for="categoria">Categoría:</label>
+
                 <select id="categoria" name="categoria">
-                    <option value="">Selecciona una categoria</option>
+                    <option value="">Selecciona una categoría</option>
                     <option value="Moda">Moda</option>
                     <option value="Belleza">Belleza</option>
                     <option value="Peinados">Peinados</option>
                     <option value="Musica">Música</option>
                     <option value="Videos">Videos</option>
                     <option value="Comunidad">Comunidad</option>
-                </select><br><br>
+                </select>
 
                 <button type="submit">Publicar</button>
+
             </form>
+
         </section>
+
 
         <!--Sección Videos-->
         <section id="Videos">
-            <h2>Videos</h2>
-            <p>Espacio para contenido audiovisual corto y tutoriales.</p>
+
+            <div class="encabezado-seccion">
+                <p>CONTENIDO AUDIOVISUAL</p>
+                <h2>Videos</h2>
+            </div>
+
+            <p>Descubre videos, ideas y contenido para inspirarte.</p>
+
+            <div class="videos-contenedor">
+
+                <article class="tarjeta-video">
+
+                    <video controls>
+                        <source src="multimedia/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+
+                    <h3>Ideas para inspirarte</h3>
+                    <p>Descubre nuevas ideas y tendencias.</p>
+
+                </article>
+
+
+                <article class="tarjeta-video">
+
+                    <video controls>
+                        <source src="multimedia/video2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+
+                    <h3>Un nuevo estilo</h3>
+                    <p>Pequeños detalles que pueden inspirarte.</p>
+
+                </article>
+
+
+                <article class="tarjeta-video">
+
+                    <video controls>
+                        <source src="multimedia/video3.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+
+                    <h3>Momentos para ti</h3>
+                    <p>Contenido para disfrutar y descubrir algo nuevo.</p>
+
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Música-->
         <section id="Musica">
-            <h2>Música</h2>
-            <p>Canciones recomendadas y ambiente musical para inspirarte.</p>
 
-            <!--Reproductor de música-->
-            <audio controls loop>
-            <source src="multimedia/Ditto.mp3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-            </audio>
+            <div class="encabezado-seccion">
+                <p>PARA ACOMPAÑAR TU DÍA</p>
+                <h2>Música</h2>
+            </div>
+
+            <p>Una selección de canciones para acompañarte mientras estudias o te relajas.</p>
+
+            <div class="musica-contenedor">
+
+                <article class="cancion">
+
+                    <span class="numero-cancion">01</span>
+
+                    <div class="informacion-cancion">
+                        <h3>Ditto</h3>
+                        <p>NewJeans</p>
+                    </div>
+
+                    <audio controls>
+                        <source src="multimedia/Ditto.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                </article>
+
+
+                <article class="cancion">
+
+                    <span class="numero-cancion">02</span>
+
+                    <div class="informacion-cancion">
+                        <h3>Nombre de la canción</h3>
+                        <p>Nombre del artista</p>
+                    </div>
+
+                    <audio controls>
+                        <source src="multimedia/cancion2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                </article>
+
+
+                <article class="cancion">
+
+                    <span class="numero-cancion">03</span>
+
+                    <div class="informacion-cancion">
+                        <h3>Otra canción</h3>
+                        <p>Nombre del artista</p>
+                    </div>
+
+                    <audio controls>
+                        <source src="multimedia/cancion3.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Comunidad-->
         <section id="Comunidad">
-            <h2>Comunidad</h2>
+
+            <div class="encabezado-seccion">
+                <p>CONÉCTATE CON OTROS</p>
+                <h2>Comunidad</h2>
+            </div>
+
             <p>Comparte experiencias, consejos y opiniones con otros usuarios.</p>
+
+            <div class="galeria comunidad-contenedor">
+
+                <article class="tarjeta sin-imagen">
+                    <h3>Comparte tus ideas</h3>
+                    <p>Publica lo que te inspira y descubre nuevas perspectivas.</p>
+                </article>
+
+                <article class="tarjeta sin-imagen">
+                    <h3>Descubre personas</h3>
+                    <p>Conecta con usuarios que comparten tus intereses.</p>
+                </article>
+
+                <article class="tarjeta sin-imagen">
+                    <h3>Inspírate</h3>
+                    <p>Encuentra contenido creado por la comunidad de Nuvé.</p>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Productos-->
         <section id="Productos">
-            <h2>Productos</h2>
-            <p>Artículos recomendados y reseñas de la comunidad.</p>
+
+            <div class="encabezado-seccion">
+                <p>DESCUBRE NUEVOS FAVORITOS</p>
+                <h2>Productos</h2>
+            </div>
+
+            <p>Artículos recomendados y favoritos de la comunidad.</p>
+
+            <div class="galeria">
+
+                <article class="tarjeta">
+                    <img src="img/producto1.jpg" alt="Producto recomendado">
+                    <h3>Producto recomendado</h3>
+                    <p>Un favorito de la comunidad.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/producto2.jpg" alt="Producto de belleza">
+                    <h3>Favoritos de belleza</h3>
+                    <p>Pequeños productos para tu rutina.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/producto3.jpg" alt="Producto de cuidado">
+                    <h3>Cuidado personal</h3>
+                    <p>Ideas para acompañar tu día.</p>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección Colección-->
         <section id="Coleccion">
-            <h2>Mi colección</h2>
-            <p>Tus ideas y publicaciones favoritas guardadas.</p>
+
+            <div class="encabezado-seccion">
+                <p>TUS IDEAS FAVORITAS</p>
+                <h2>Mi colección</h2>
+            </div>
+
+            <p>Guarda las ideas, estilos y publicaciones que más te gusten.</p>
+
+            <div class="galeria">
+
+                <article class="tarjeta">
+                    <img src="img/coleccion1.jpg" alt="Ideas favoritas">
+                    <h3>Ideas favoritas</h3>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/coleccion2.jpg" alt="Inspiración guardada">
+                    <h3>Inspiración guardada</h3>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="img/coleccion3.jpg" alt="Estilos favoritos">
+                    <h3>Mis estilos favoritos</h3>
+                </article>
+
+            </div>
+
         </section>
+
 
         <!--Sección del perfil-->
         <section id="Perfil">
-            <h2>Mi perfil</h2>
-            <p>Este espacio estará destinado a la información del usuario y sus publicaciones</p>
-            <p>Nombre de usuario:</p>
-            <p>Intereses: Moda, belleza, música y tendencias.</p>
+
+            <div class="encabezado-seccion">
+                <p>TU ESPACIO PERSONAL</p>
+                <h2>Mi perfil</h2>
+            </div>
+
+            <div class="perfil-contenedor">
+
+                <div class="perfil-imagen">N</div>
+
+                <div>
+                    <h3>Nombre de usuario</h3>
+                    <p>Este espacio está destinado a la información del usuario y sus publicaciones.</p>
+                    <p>Intereses: Moda, belleza, música y tendencias.</p>
+                </div>
+
+            </div>
+
         </section>
+
 
         <!--Sección de acerca de-->
         <section id="Acerca">
-            <h2>Acerca de Nuvé</h2>
-            <p>Nuvé es una red social creada para compartir inspiración relacionada con la moda, la belleza, los peinados, la música y otros intereses. Su propósito es permitir que las personas descubran ideas y compartan sus gustos con una comunidad.</p>
+
+            <div class="encabezado-seccion">
+                <p>CONOCE MÁS SOBRE NOSOTROS</p>
+                <h2>Acerca de Nuvé</h2>
+            </div>
+
+            <p>
+                Nuvé es una red social creada para compartir inspiración relacionada
+                con la moda, la belleza, los peinados, la música y otros intereses.
+                Su propósito es permitir que las personas descubran ideas y compartan
+                sus gustos con una comunidad.
+            </p>
+
         </section>
 
     </main>
+
 
     <!--Pie de página-->
     <footer>
         <p>Nuvé - Tu espacio de inspiración</p>
         <p>Proyecto de Desarrollo Web - Décimo, 2026</p>
     </footer>
+
 </body>
+
 </html>
