@@ -14,16 +14,18 @@
 
     <!--Encabezado principal-->
     <header>
-        <h1>Nuvé</h1>
+    <h1>Nuvé</h1>
 
-        <!--Barra de búsqueda-->
-        <div class="busqueda">
-            <input type="search" placeholder="Busca lo que te inspira">
-        </div>
+    <div class="busqueda">
+        <input type="search" placeholder="Busca lo que te inspira">
+    </div>
 
-        <p>Inspírate, comparte y descubre tu estilo</p>
-    </header>
-
+    <p>Inspírate, comparte y descubre tu estilo</p>
+    <!-- Acceso directo al perfil -->
+    <a href="perfil.html" class="perfil-enlace" aria-label="Ir a mi perfil">
+        <img src="img/foto perfil.jpeg" alt="Mi perfil">
+    </a>
+</header>
 
     <!--Barra de navegación-->
     <nav>
@@ -47,7 +49,7 @@
 
         <a href="#Productos">Productos</a>
         <a href="#Coleccion">Colección</a>
-        <a href="#Perfil">Perfil</a>
+        <a href="perfil.html">Perfil</a>
         <a href="#Acerca">Acerca de</a>
 
     </nav>
@@ -445,43 +447,59 @@
             <div class="musica-contenedor">
 
                 <article class="cancion">
+
                     <span class="numero-cancion">01</span>
+
                     <div class="informacion-cancion">
                         <h3>Ditto</h3>
                         <p>NewJeans</p>
                     </div>
-                    <div class="tarjeta-audio">
-                        <audio controls src="multimedia/Ditto.mp3" preload="metadata"></audio>
-                    </div>
+
+                    <audio controls>
+                        <source src="multimedia/Ditto.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
                 </article>
 
 
                 <article class="cancion">
+
                     <span class="numero-cancion">02</span>
+
                     <div class="informacion-cancion">
                         <h3>Starboy</h3>
                         <p>The weekend</p>
                     </div>
-                    <div class="tarjeta-audio">
-                        <audio controls src="multimedia/Starboy.mp3" preload="metadata"></audio>
-                    </div>
+
+                    <audio controls>
+                        <source src="multimedia/Starboy.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
                 </article>
 
 
                 <article class="cancion">
+
                     <span class="numero-cancion">03</span>
+
                     <div class="informacion-cancion">
                         <h3>That´s What I Like</h3>
                         <p>Bruno Mars</p>
                     </div>
-                    <div class="tarjeta-audio">
-                        <audio controls src="multimedia/That´s What I like.mp3" preload="metadata"></audio>
-                    </div>
+
+                    <audio controls>
+                        <source src="multimedia/That´s What I like.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
                 </article>
 
             </div>
 
         </section>
+
 
         <!--Sección Comunidad-->
         <section id="Comunidad">
@@ -567,32 +585,7 @@
                 </div>
 
     </section>
-
-
-    <!--Sección del perfil-->
-    <section id="Perfil">
-
-        <div class="encabezado-seccion">
-            <p>TU ESPACIO PERSONAL</p>
-            <h2>Mi perfil</h2>
-        </div>
-
-        <div class="perfil-contenedor">
-
-            <div class="perfil-imagen">N</div>
-
-            <div>
-                <h3>Nombre de usuario</h3>
-                <p>Este espacio está destinado a la información del usuario y sus publicaciones.</p>
-                <p>Intereses: Moda, belleza, música y tendencias.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!--Sección de acerca de-->
+<!--Sección de acerca de-->
     <section id="Acerca">
 
         <div class="encabezado-seccion">
