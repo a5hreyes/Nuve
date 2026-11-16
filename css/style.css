@@ -829,7 +829,7 @@ footer {
 }
 
 
-<<<<<<< HEAD
+
 /* COMENTARIOS DE LAS PUBLICACIONES */
 
 .comentarios-publicacion {
@@ -1058,7 +1058,6 @@ footer {
         text-align: left;
     }
 }
-=======
 
 /* ACCESO AL PERFIL DESDE EL ENCABEZADO */
 .perfil-enlace {
@@ -1240,4 +1239,3 @@ footer {
     height: 100%;
     object-fit: cover;
 }
->>>>>>> prueba_perfil
