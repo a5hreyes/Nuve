@@ -1321,3 +1321,115 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* BOTÓN DE MODO CLARO Y OSCURO */
+
+.boton-tema {
+    padding: 9px 15px;
+    color: var(--blanco);
+    background-color: var(--rosa-texto);
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-tema:hover {
+    opacity: 0.8;
+}
+
+
+/* MODO OSCURO */
+
+body.modo-oscuro {
+    --fondo: #211e22;
+    --blanco: #302a30;
+    --rosa: #49383f;
+    --rosa-claro: #3a3036;
+    --beige: #403a35;
+    --beige-claro: #35302d;
+    --texto: #f4e9ed;
+    --texto-secundario: #c2b1b9;
+    --rosa-texto: #d6a1aa;
+    --borde: #51434b;
+
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+
+/* ELEMENTOS DEL MODO OSCURO */
+
+body.modo-oscuro header,
+body.modo-oscuro nav,
+body.modo-oscuro main,
+body.modo-oscuro section,
+body.modo-oscuro article,
+body.modo-oscuro footer,
+body.modo-oscuro .publicacion,
+body.modo-oscuro .tarjeta,
+body.modo-oscuro .perfil-contenido {
+    background-color: var(--blanco);
+    color: var(--texto);
+    border-color: var(--borde);
+}
+
+
+/* TEXTOS DEL MODO OSCURO */
+
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro p,
+body.modo-oscuro label,
+body.modo-oscuro a {
+    color: var(--texto);
+}
+
+
+/* FORMULARIOS DEL MODO OSCURO */
+
+body.modo-oscuro input,
+body.modo-oscuro textarea,
+body.modo-oscuro select {
+    color: var(--texto);
+    background-color: var(--fondo);
+    border-color: var(--borde);
+}
+
+body.modo-oscuro input::placeholder,
+body.modo-oscuro textarea::placeholder {
+    color: var(--texto-secundario);
+}
+
+
+/* BOTONES DEL MODO OSCURO */
+
+body.modo-oscuro button:not(.boton-tema) {
+    border-color: var(--borde);
+}
+
+
+/* IMÁGENES DEL MODO OSCURO */
+
+body.modo-oscuro img {
+    border-color: var(--borde);
+}
+
+
+/* TRANSICIÓN ENTRE TEMAS */
+
+body,
+header,
+nav,
+main,
+section,
+article,
+footer,
+input,
+textarea,
+select,
+button {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
