@@ -829,6 +829,7 @@ footer {
 }
 
 
+<<<<<<< HEAD
 /* COMENTARIOS DE LAS PUBLICACIONES */
 
 .comentarios-publicacion {
@@ -1057,3 +1058,186 @@ footer {
         text-align: left;
     }
 }
+=======
+
+/* ACCESO AL PERFIL DESDE EL ENCABEZADO */
+.perfil-enlace {
+    display: block;
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    border: 2px solid var(--rosa);
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.perfil-enlace:hover {
+    transform: scale(1.06);
+    box-shadow: 0 3px 12px rgba(80, 60, 60, 0.14);
+}
+.perfil-enlace img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PÁGINA COMPLETA DE PERFIL */
+.pagina-perfil main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 38px 30px 70px;
+}
+.perfil-volver {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--rosa-texto);
+    text-decoration: none;
+    font-size: 0.82rem;
+}
+.perfil-volver:hover { color: var(--texto); }
+.perfil-portada {
+    min-height: 175px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #f3e1e2, #eee7dc 65%, #fbf2f2);
+}
+.perfil-cabecera {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    margin: -58px 35px 0;
+    position: relative;
+}
+.perfil-foto-grande {
+    width: 132px;
+    height: 132px;
+    flex: 0 0 132px;
+    object-fit: cover;
+    border: 6px solid var(--blanco);
+    border-radius: 50%;
+    background: var(--rosa);
+    box-shadow: 0 4px 18px rgba(80, 60, 60, 0.08);
+}
+.perfil-identidad { padding-bottom: 10px; }
+.perfil-identidad h2 {
+    margin: 0 0 2px;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.perfil-identidad .usuario {
+    margin: 0;
+    color: var(--rosa-texto);
+    font-size: 0.82rem;
+}
+.perfil-bio {
+    margin: 24px 35px;
+    padding: 22px 25px;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 9px;
+}
+.perfil-bio p {
+    margin: 0 0 10px;
+    font-size: 0.88rem;
+}
+.perfil-bio p:last-child { margin-bottom: 0; }
+.perfil-datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 35px 30px;
+}
+.perfil-dato {
+    flex: 1;
+    min-width: 130px;
+    padding: 17px;
+    text-align: center;
+    background: var(--rosa-claro);
+    border-radius: 8px;
+}
+.perfil-dato strong {
+    display: block;
+    color: var(--rosa-texto);
+    font-family: Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: normal;
+}
+.perfil-dato span {
+    color: var(--texto-secundario);
+    font-size: 0.72rem;
+}
+.perfil-intereses { margin: 0 35px 35px; }
+.perfil-intereses h3,
+.perfil-publicaciones h3 {
+    margin: 0 0 14px;
+    font-family: Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: normal;
+}
+.intereses-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+.intereses-etiquetas span {
+    padding: 7px 13px;
+    color: #936b72;
+    background: var(--rosa-claro);
+    border: 1px solid #f0e1e2;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+.perfil-publicaciones {
+    margin: 0 35px;
+    padding-top: 26px;
+    border-top: 1px solid var(--borde);
+}
+.perfil-publicaciones .galeria { grid-template-columns: repeat(3, 1fr); }
+.perfil-publicaciones .tarjeta img { height: 230px; }
+
+@media (max-width: 650px) {
+    .pagina-perfil main { padding: 22px 15px 45px; }
+    .perfil-portada { min-height: 125px; }
+    .perfil-cabecera {
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        margin: -58px 12px 0;
+        text-align: center;
+    }
+    .perfil-foto-grande {
+        width: 116px;
+        height: 116px;
+        flex-basis: 116px;
+    }
+    .perfil-identidad { padding-bottom: 0; }
+    .perfil-identidad h2 { font-size: 1.7rem; }
+    .perfil-bio, .perfil-datos, .perfil-intereses, .perfil-publicaciones {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .perfil-datos { gap: 8px; }
+    .perfil-dato { min-width: 95px; padding: 13px 8px; }
+    .perfil-publicaciones .galeria { grid-template-columns: 1fr; }
+}
+
+
+/* El perfil ocupa toda la página, sin la barra lateral del inicio */
+.pagina-perfil footer {
+    margin-left: 0;
+}
+.perfil-portada {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #f3e1e2;
+}
+
+.perfil-portada video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+>>>>>>> prueba_perfil
