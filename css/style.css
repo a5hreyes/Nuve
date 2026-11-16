@@ -827,3 +827,66 @@ footer {
         font-size: 1.7rem;
     }
 }
+
+
+/* COMENTARIOS DE LAS PUBLICACIONES */
+
+.comentarios-publicacion {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--borde);
+}
+
+.comentarios-publicacion h4 {
+    margin: 0 0 10px;
+    color: var(--rosa-texto);
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+.comentario {
+    margin-bottom: 8px;
+    padding: 9px 10px;
+    background-color: var(--rosa-claro);
+    border-radius: 5px;
+}
+
+.comentario strong {
+    color: #9a6670;
+    font-size: 0.7rem;
+}
+
+.comentarios-publicacion .comentario p {
+    margin: 3px 0 0;
+    color: var(--texto-secundario);
+    font-size: 0.7rem;
+}
+
+.escribir-comentario {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+.escribir-comentario input {
+    min-width: 0;
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #e8dfdd;
+    border-radius: 18px;
+    font-size: 0.68rem;
+}
+
+.escribir-comentario button {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    color: var(--blanco);
+    background-color: #b9858b;
+    border-radius: 18px;
+    font-size: 0.68rem;
+}
+
+.escribir-comentario button:hover {
+    background-color: #9f6e77;
+}
